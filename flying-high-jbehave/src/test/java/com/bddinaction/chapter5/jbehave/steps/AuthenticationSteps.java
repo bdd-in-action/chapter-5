@@ -1,6 +1,7 @@
 package com.bddinaction.chapter5.jbehave.steps;
 
 import org.jbehave.core.annotations.Given;
+import org.jbehave.core.annotations.Pending;
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
 
@@ -13,11 +14,12 @@ import org.jbehave.core.annotations.When;
 public class AuthenticationSteps {
 
     @Given("Joe is a Frequent Flyer member")
+    @Pending
     public void givenJoeIsAFrequentFlyerMember() {
-        System.out.println("JOE IS A FREQUENT FLYER");
     }
 
     @Given("Joe has registered online with a password of 'secret'")
+    @Pending
     public void givenJoeHasRegisteredOnlineWithAPasswordOfsecret() {
         // PENDING
     }
@@ -32,6 +34,7 @@ public class AuthenticationSteps {
     }
 
     @Given("the account has expired")
+    @Pending
     public void givenTheAccountHasExpired() {
         // PENDING
     }

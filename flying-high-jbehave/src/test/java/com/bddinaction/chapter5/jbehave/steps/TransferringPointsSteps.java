@@ -1,6 +1,7 @@
 package com.bddinaction.chapter5.jbehave.steps;
 
 import org.jbehave.core.annotations.Given;
+import org.jbehave.core.annotations.Pending;
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
 import org.jbehave.core.model.ExamplesTable;
@@ -17,11 +18,11 @@ import java.util.Map;
 public class TransferringPointsSteps {
 
     @Given("the following accounts: $accounts")
+    @Pending
     public void givenTheFollowingAccounts(ExamplesTable accounts) {
         for(Map<String, String> account : accounts.getRows()) {
             String owner = account.get("owner");
             int points = Integer.parseInt(account.get("points"));
-            // Initialize test account for this frequent flyer
         }
     }
 

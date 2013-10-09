@@ -19,17 +19,14 @@ public class TransferSteps {
 
     @Given("I am a (.*) Frequent Flyer member")
     public void useAMemberWithAGivenStatus(String status) {
-       // member = members.getMember().withStatus(status);
     }
 
     @Given("^(.*) is a Frequent Flyer member$")
     public void Joe_is_a_Frequent_Flyer_member(String member) throws Throwable {
-        System.out.println("Frequent flyer: " + member);
     }
 
     @Given("^the following accounts:$")
     public void the_following_accounts(List<Account> accounts) throws Throwable {
-
     }
 
     @When("^(.*) transfers (\\d+) points to (.*)$")

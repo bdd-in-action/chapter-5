@@ -24,7 +24,6 @@ public class EarningPointsFromFlights {
 
     @Then("^I should earn (\\d+) points$")
     public void I_should_earn_points(int points) throws Throwable {
-        Assert.assertThat(points, is(points));
     }
 
     @Then("^I should earn a status bonus of <bonus>$")
@@ -34,11 +33,6 @@ public class EarningPointsFromFlights {
     @When("^I fly on a flight that is worth <base> base points$")
     public void I_fly_on_a_flight_that_is_worth_base_base_points() throws Throwable {
     }
-
-//    @Given("^I am a Standard Frequent Flyer member$")
-//    public void I_am_a_Standard_Frequent_Flyer_member() throws Throwable {
-//        // Express the Regexp above with the code you wish you had
-//    }
 
     @When("^I fly on a flight that is worth (\\d+) base points$")
     public void I_fly_on_a_flight_that_is_worth_base_points(int arg1) throws Throwable {
